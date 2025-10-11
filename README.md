@@ -1,2 +1,2 @@
-# zebra492g-hash.github.io
+# zebra492g.github.io
 first website
