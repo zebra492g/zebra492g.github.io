@@ -2,35 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Vibe Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zebra’s Vibe Site</title>
   <style>
     body {
-      background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+      background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
       font-family: 'Poppins', sans-serif;
-      color: white;
+      color: #fff;
+      margin: 0;
       text-align: center;
-      height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      margin: 0;
+      align-items: center;
     }
-    h1 { font-size: 3em; margin-bottom: 0.3em; }
-    p { font-size: 1.2em; opacity: 0.9; }
-    a {
+
+    header {
+      padding: 2em 0;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin: 0.2em 0;
+    }
+
+    nav a {
+      margin: 0 1em;
       color: white;
       text-decoration: none;
-      border: 2px solid white;
-      padding: 10px 20px;
-      border-radius: 25px;
-      transition: 0.3s;
+      font-weight: 600;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.3s;
     }
-    a:hover { background: rgba(255,255,255,0.2); }
+
+    nav a:hover {
+      border-bottom: 2px solid white;
+    }
+
+    section {
+      width: 90%;
+      max-width: 800px;
+      margin: 2em 0;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 2em;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1em;
+    }
+
+    footer {
+      margin: 3em 0 1em;
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1em;
+      margin-top: 1em;
+    }
+
+    .photo-grid img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .photo-grid img:hover {
+      transform: scale(1.03);
+    }
   </style>
 </head>
+
 <body>
-  <h1>Welcome to My Vibe ✨</h1>
-  <p>Chill space, good code, good energy.</p>
-  <a href="https://github.com/yourusername">My GitHub</a>
+  <header>
+    <h1>Welcome to Zebra’s Vibe ✨</h1>
+    <p>Chill space — code, travel, and good energy.</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#travel">Travel</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I’m Zebra — a curious mind who loves to explore tech, nature, and new ideas. This is my cozy digital space where I’ll share what inspires me.</p>
+  </section>
+
+  <section id="travel">
+    <h2>Travel 🌍</h2>
+    <p>I love capturing stories from the road — moments that remind me how big and beautiful the world is. I’ll be adding photos and travel notes here soon!</p>
+    <div class="photo-grid">
+      <!-- Add your photos later like this:
+      <img src="photos/alps.jpg" alt="Hiking in the Alps">
+      <img src="photos/kyoto.jpg" alt="Street in Kyoto">
+      -->
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Placeholder beach">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Mountains placeholder">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Let’s connect! You can find me on <a href="https://github.com/zebra492g" style="color:white;text-decoration:underline;">GitHub</a>.</p>
+  </section>
+
+  <footer>
+    © 2025 Zebra’s Vibe — built with GitHub Pages 💫
+  </footer>
 </body>
 </html>
+
