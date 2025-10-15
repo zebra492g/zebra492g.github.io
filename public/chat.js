@@ -1,7 +1,7 @@
-// /chat.js
+// /public/chat.js
 async function sendMessage() {
   const msgInput = document.getElementById("msg");
-  const userMessage = msgInput.value;
+  const userMessage = msgInput.value.trim();
   if (!userMessage) return;
 
   const chatDiv = document.getElementById("chat");
@@ -24,5 +24,4 @@ async function sendMessage() {
   } catch (error) {
     chatDiv.innerHTML += `<p><b>Error:</b> ${error.message}</p>`;
   }
-
 }
