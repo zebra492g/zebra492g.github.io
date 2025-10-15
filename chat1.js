@@ -24,4 +24,5 @@ async function sendMessage() {
   } catch (error) {
     chatDiv.innerHTML += `<p><b>Error:</b> ${error.message}</p>`;
   }
+
 }
